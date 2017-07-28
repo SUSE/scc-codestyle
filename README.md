@@ -12,9 +12,7 @@ group :test, :development do
 end
 ```
 
-And then execute:
-
-    $ bundle
+You do not need to include RuboCop directly in your application's dependencies. Scc::Codestyle will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
 
 ## Usage
 
@@ -32,4 +30,14 @@ Now, run:
 $ bundle exec rubocop
 ```
 
-You do not need to include RuboCop directly in your application's dependencies. Scc::Codestyle will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
+You can also automatically generate a `.rubocop_todo.yml` file to temporarily ignore failing cops until the offenses are removed from your code base. Run:
+
+```bash
+$ bundle exec rubocop --auto-gen-config
+```
+
+And add this to `.rubocop.yml` below the previous block:
+
+```yaml
+inherit_from: .rubocop_todo.yml
+```
