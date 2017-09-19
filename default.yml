@@ -139,7 +139,7 @@ Layout/EmptyLinesAroundAccessModifier:
 
 Layout/EmptyLinesAroundClassBody:
   Enabled: true
-  EnforcedStyle: empty_lines
+  EnforcedStyle: no_empty_lines
 
 Style/EmptyLiteral:
   Enabled: true
