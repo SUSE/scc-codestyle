@@ -326,7 +326,7 @@ Layout/IndentationWidth:
 Style/Lambda:
   Enabled: true
 
-Style/PredicateName:
+Naming/PredicateName:
   Enabled: false
 
 Style/RaiseArgs:
@@ -468,7 +468,7 @@ Rails/OutputSafety:
 Rails/UniqBeforePluck:
   Enabled: false
 
-Style/VariableNumber:
+Naming/VariableNumber:
   Enabled: true
   EnforcedStyle: normalcase
 
@@ -544,7 +544,7 @@ Rails/FilePath:
 Rails/Present:
   Enabled: true
 
-Style/FileName:
+Naming/FileName:
   Enabled: true
   Exclude:
     - Guardfile
