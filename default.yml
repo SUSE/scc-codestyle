@@ -153,7 +153,7 @@ Lint/AssignmentInCondition:
 Lint/BlockAlignment:
   Enabled: true
 
-Lint/LiteralInCondition:
+Lint/LiteralAsCondition:
   Enabled: true
 
 Lint/Loop:
