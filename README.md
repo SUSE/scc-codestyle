@@ -1,4 +1,4 @@
-# Scc::Codestyle
+# SCC::Codestyle
 
 Shared Ruby style guide used by the SCC Team.
 
