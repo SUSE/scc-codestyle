@@ -78,7 +78,10 @@ Style/WordArray:
 Layout/SpaceAfterComma:
   Enabled: true
 
-Layout/SpaceInsideBrackets:
+Layout/SpaceInsideReferenceBrackets:
+  Enabled: false
+
+Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: false
 
 Layout/SpaceInsideParens:
@@ -150,7 +153,7 @@ Style/For:
 Lint/AssignmentInCondition:
   Enabled: true
 
-Lint/BlockAlignment:
+Layout/BlockAlignment:
   Enabled: true
 
 Lint/LiteralAsCondition:
@@ -189,7 +192,7 @@ Lint/AmbiguousRegexpLiteral:
 Lint/Debugger:
   Enabled: true
 
-Lint/EndAlignment:
+Layout/EndAlignment:
   Enabled: true
 
 Lint/HandleExceptions:
@@ -198,7 +201,7 @@ Lint/HandleExceptions:
 Lint/StringConversionInInterpolation:
   Enabled: true
 
-Lint/UnneededDisable:
+Lint/UnneededCopDisableDirective:
   Enabled: true
 
 Layout/SpaceInsideHashLiteralBraces:
@@ -350,7 +353,10 @@ Layout/SpaceAfterMethodName:
 Style/SymbolProc:
   Enabled: true
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+
+Style/TrailingCommaInHashLiteral:
   Enabled: true
 
 Style/TrailingCommaInArguments:
