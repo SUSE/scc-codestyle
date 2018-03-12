@@ -1,7 +1,9 @@
 inherit_from:
-  - .rubocop_disabled.yml
   - default.yml
 
-Style/FileName:
+Naming/FileName:
+  inherit_mode:
+    merge:
+      - Exclude
   Exclude:
     - scc-codestyle.gemspec
