@@ -307,7 +307,7 @@ Layout/EmptyLinesAroundModuleBody:
   Enabled: false
 
 Style/IfUnlessModifier:
-  Enabled: true
+  Enabled: false
 
 Style/FormatString:
   Enabled: false
