@@ -16,16 +16,17 @@ AllCops:
     - tmp/**/*
     - lib/locale/*
 
-require: rubocop-rspec
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
 
 # TODO: These three checks are ruby 2.3-only. Let's discuss them after we've upgraded
-Rails/SafeNavigation:
-  Enabled: false
 Style/SafeNavigation:
   Enabled: false
 Style/NumericPredicate:
   Enabled: false
-Layout/IndentHeredoc:
+Layout/HeredocIndentation:
   Enabled: false
 
 # TODO: team wants to have this enabled (2017-07-13)
@@ -106,10 +107,10 @@ Style/LineEndConcatenation:
 Layout/LeadingCommentSpace:
   Enabled: true
 
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Enabled: true
 
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: true
   EnforcedLastArgumentHashStyle: ignore_implicit
 
@@ -195,13 +196,13 @@ Lint/Debugger:
 Layout/EndAlignment:
   Enabled: true
 
-Lint/HandleExceptions:
+Lint/SuppressedException:
   Enabled: true
 
-Lint/StringConversionInInterpolation:
+Lint/RedundantStringCoercion:
   Enabled: true
 
-Lint/UnneededCopDisableDirective:
+Lint/RedundantCopDisableDirective:
   Enabled: true
 
 Layout/SpaceInsideHashLiteralBraces:
@@ -216,7 +217,7 @@ Layout/SpaceBeforeBlockBraces:
 Style/BracesAroundHashParameters:
   Enabled: false
 
-Layout/TrailingBlankLines:
+Layout/TrailingEmptyLines:
   Enabled: true
 
 Layout/TrailingWhitespace:
@@ -265,7 +266,7 @@ Layout/DotPosition:
 Lint/AmbiguousOperator:
   Enabled: true
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: true
   Max: 160
 
@@ -284,7 +285,7 @@ Metrics/PerceivedComplexity:
 Style/Alias:
   Enabled: true
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: false
 
 Style/AndOr:
@@ -312,11 +313,11 @@ Style/IfUnlessModifier:
 Style/FormatString:
   Enabled: false
 
-Layout/IndentArray:
+Layout/FirstArrayElementIndentation:
   Enabled: true
   EnforcedStyle: consistent
 
-Layout/IndentHash:
+Layout/FirstHashElementIndentation:
   Enabled: true
   EnforcedStyle: consistent
 
@@ -398,7 +399,7 @@ Layout/MultilineHashBraceLayout:
 Style/ZeroLengthPredicate:
   Enabled: true
 
-Style/UnneededInterpolation:
+Style/RedundantInterpolation:
   Enabled: true
 
 Style/MutableConstant:
@@ -544,7 +545,7 @@ RSpec/EmptyLineAfterSubject:
   Exclude:
     - spec/models/siebel/activity_spec.rb
 
-Rails/FilePath:
+RSpec/FilePath:
   Enabled: true
 
 Rails/Present:
@@ -559,9 +560,6 @@ Style/PercentLiteralDelimiters:
   Enabled: true
 
 RSpec/ExampleWording:
-  Enabled: true
-
-RSpec/FilePath:
   Enabled: true
 
 RSpec/EmptyLineAfterFinalLet:
