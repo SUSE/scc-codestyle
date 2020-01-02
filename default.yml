@@ -3,11 +3,7 @@ AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
   ExtraDetails: true
-  Include:
-    - Gemfile
-    - Rakefile
-    - config.ru
-    - '**/*.rake'
+
   Exclude:
     - .bundle/**/*
     - db/schema.rb
