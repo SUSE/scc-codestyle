@@ -544,6 +544,9 @@ RSpec/EmptyLineAfterSubject:
 RSpec/FilePath:
   Enabled: true
 
+Rails/InverseOf:
+  Enabled: false
+
 Rails/Present:
   Enabled: true
 
