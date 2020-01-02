@@ -3,11 +3,7 @@ AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
   ExtraDetails: true
-  Include:
-    - Gemfile
-    - Rakefile
-    - config.ru
-    - '**/*.rake'
+
   Exclude:
     - .bundle/**/*
     - db/schema.rb
@@ -546,6 +542,9 @@ RSpec/EmptyLineAfterSubject:
     - spec/models/siebel/activity_spec.rb
 
 RSpec/FilePath:
+  Enabled: true
+
+Rails/InverseOf:
   Enabled: true
 
 Rails/Present:
