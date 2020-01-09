@@ -572,3 +572,6 @@ RSpec/ExampleLength:
 
 RSpec/AnyInstance:
   Enabled: false
+
+RSpec/PredicateMatcher:
+  Enabled: false
