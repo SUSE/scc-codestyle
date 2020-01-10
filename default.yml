@@ -42,6 +42,12 @@ Bundler/OrderedGems:
 Layout/SpaceAroundEqualsInParameterDefault:
   Enabled: true
 
+Style/RedundantCondition:
+  Enabled: true
+
+Style/RedundantSort:
+  Enabled: true
+
 Style/SignalException:
   Enabled: false
 
