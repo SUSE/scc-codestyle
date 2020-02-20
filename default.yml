@@ -572,3 +572,12 @@ RSpec/AnyInstance:
 
 RSpec/PredicateMatcher:
   Enabled: false
+
+RSpec/RepeatedDescription:
+  Enabled: pending
+
+RSpec/RepeatedExampleGroupBody:
+  Enabled: pending
+
+RSpec/RepeatedExampleGroupDescription:
+  Enabled: pending
