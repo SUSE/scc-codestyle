@@ -210,9 +210,6 @@ Layout/SpaceInsideBlockBraces:
 Layout/SpaceBeforeBlockBraces:
   Enabled: true
 
-Style/BracesAroundHashParameters:
-  Enabled: false
-
 Layout/TrailingEmptyLines:
   Enabled: true
 
