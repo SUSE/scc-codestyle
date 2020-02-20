@@ -1,5 +1,5 @@
 module Scc
   module Codestyle
-    VERSION = '0.3.2'.freeze
+    VERSION = '0.4.0'.freeze
   end
 end
