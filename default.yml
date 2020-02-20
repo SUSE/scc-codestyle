@@ -210,9 +210,6 @@ Layout/SpaceInsideBlockBraces:
 Layout/SpaceBeforeBlockBraces:
   Enabled: true
 
-Style/BracesAroundHashParameters:
-  Enabled: false
-
 Layout/TrailingEmptyLines:
   Enabled: true
 
@@ -575,3 +572,12 @@ RSpec/AnyInstance:
 
 RSpec/PredicateMatcher:
   Enabled: false
+
+RSpec/RepeatedDescription:
+  Enabled: pending
+
+RSpec/RepeatedExampleGroupBody:
+  Enabled: pending
+
+RSpec/RepeatedExampleGroupDescription:
+  Enabled: pending
