@@ -368,7 +368,7 @@ Style/TrailingCommaInArguments:
 Style/TrivialAccessors:
   Enabled: true
 
-Layout/Tab:
+Layout/IndentationStyle:
   Enabled: true
 
 Performance/StringReplacement:
