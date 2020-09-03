@@ -9,6 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors  = ['SCC Team']
   spec.email    = ['scc@suse.com']
 
+  spec.required_ruby_version = '>= 2.5.0'
+
   spec.summary  = 'SCC style guides and shared style configs.'
   spec.homepage = 'https://github.com/SUSE/scc-codestyle'
 
@@ -21,6 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop-performance', '1.6.1'
   spec.add_dependency 'rubocop-rails', '2.6.0'
   spec.add_dependency 'rubocop-rspec', '1.40.0'
-  spec.add_development_dependency 'bundler', '~> 1.15'
+  spec.add_development_dependency 'bundler', '~> 1.17.3'
   spec.add_development_dependency 'rake', '~> 12.3'
 end
