@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.5
   DisplayCopNames: true
   DisplayStyleGuide: true
   ExtraDetails: true
@@ -166,7 +166,7 @@ Lint/Loop:
   Enabled: true
 
 Lint/MissingCopEnableDirective:
-  Enable: true
+  Enabled: true
 
 Lint/ParenthesesAsGroupedExpression:
   Enabled: true
@@ -583,10 +583,19 @@ RSpec/PredicateMatcher:
   Enabled: false
 
 RSpec/RepeatedDescription:
-  Enabled: pending
+  Enabled: true
 
 RSpec/RepeatedExampleGroupBody:
-  Enabled: pending
+  Enabled: true
 
 RSpec/RepeatedExampleGroupDescription:
-  Enabled: pending
+  Enabled: true
+
+Style/HashEachMethods:
+  Enabled: false
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
