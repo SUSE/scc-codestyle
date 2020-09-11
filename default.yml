@@ -16,6 +16,7 @@ require:
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
+  - rubocop-thread_safety
 
 # TODO: These three checks are ruby 2.3-only. Let's discuss them after we've upgraded
 Style/SafeNavigation:
