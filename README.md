@@ -41,3 +41,17 @@ And add this to `.rubocop.yml` below the previous block:
 ```yaml
 inherit_from: .rubocop_todo.yml
 ```
+
+### Development
+
+Build the docker container with:
+
+```bash
+$ make build
+```
+
+And then enter in the container with:
+
+```bash
+$ make console
+```

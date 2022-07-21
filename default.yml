@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.7
   DisplayCopNames: true
   DisplayStyleGuide: true
   ExtraDetails: true
@@ -17,14 +17,6 @@ require:
   - rubocop-rails
   - rubocop-rspec
   - rubocop-thread_safety
-
-# TODO: These three checks are ruby 2.3-only. Let's discuss them after we've upgraded
-Style/SafeNavigation:
-  Enabled: false
-Style/NumericPredicate:
-  Enabled: false
-Layout/HeredocIndentation:
-  Enabled: false
 
 # TODO: team wants to have this enabled (2017-07-13)
 # This cop is quite some work. Last time we checked we had 63 offenses and each would need a 'rubocop:disable' (no one will ever improve them then) or a proper fix.
