@@ -645,7 +645,6 @@ Lint/UnreachableLoop: # (new in 0.89)
   Enabled: true
 Lint/UselessMethodDefinition: # (new in 0.90)
   Enabled: true
-  AllowComments: true
 Lint/UselessTimes: # (new in 0.91)
   Enabled: true
 Style/AccessorGrouping: # (new in 0.87)
