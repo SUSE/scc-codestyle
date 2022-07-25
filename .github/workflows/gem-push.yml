@@ -3,6 +3,10 @@ name: scc-codestyle
 on:
   push:
     branches: [ master ]
+    paths:
+      - default.yml
+      - scc-codestyle.gemspec
+      - lib/scc/codestyle/version.rb
 
 jobs:
   build:
