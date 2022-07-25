@@ -21,4 +21,4 @@ jobs:
         run: |
           LOCAL_GEM_VERSION=$(ruby -e "require 'scc/codestyle'; print Scc::Codestyle::VERSION" -I lib)
           REMOTE_GEM_VERSION=$(curl 'https://rubygems.org/api/v1/versions/scc-codestyle/latest.json' | jq '.version')
-          if [ "$LOCAL_GEM_VERSION" > $(("$REMOTE_GEM_VERSION")) ]; then (echo "bump the gem version!" && exit 1); else (echo "$LOCAL_GEM_VERSION" && echo "$REMOTE_GEM_VERSION" && exit 0); fi
+          if [ "$LOCAL_GEM_VERSION" > $(($REMOTE_GEM_VERSION)) ]; then (echo "bump the gem version!" && exit 1); else exit 0; fi
