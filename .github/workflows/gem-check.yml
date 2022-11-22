@@ -1,0 +1,19 @@
+name: Check if the gem version exists on rubygems.org
+
+on: [pull_request]
+
+jobs:
+  build-gem:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Compare local and remote gem versions
+        run: |
+          LOCAL_GEM_VERSION=$(cat lib/scc/codestyle/version.rb | grep VERSION | awk -F"'" '{print $2}')
+          REMOTE_GEM_VERSION=$(curl 'https://rubygems.org/api/v1/versions/scc-codestyle/latest.json' | jq '.version' | tr -d \");
+          if [ "$(printf '%s\n' "$LOCAL_GEM_VERSION" "$REMOTE_GEM_VERSION" | sort -rV | head -n 1)" != "$REMOTE_GEM_VERSION" ]; then (echo "All good!" && echo exit 0); else (echo "Bump the gem version!" && exit 1); fi
