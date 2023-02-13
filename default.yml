@@ -117,6 +117,7 @@ Style/GuardClause:
 
 Style/HashSyntax:
   EnforcedStyle: ruby19
+  EnforcedShorthandSyntax: never
 
 Style/RedundantSelf:
   Enabled: true
@@ -893,6 +894,7 @@ Lint/UselessRuby2Keywords: # new in 1.23
   Enabled: true
 Naming/BlockForwarding: # new in 1.24
   Enabled: true
+  EnforcedStyle: explicit
 Security/CompoundHash: # new in 1.28
   Enabled: true
 Style/EmptyHeredoc: # new in 1.32
