@@ -16,6 +16,9 @@ require:
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
+  - rubocop-rspec_rails
+  - rubocop-capybara
+  - rubocop-factory_bot
   - rubocop-thread_safety
 
 # TODO: team wants to have this enabled (2017-07-13)
@@ -541,7 +544,7 @@ RSpec/EmptyLineAfterSubject:
   Exclude:
     - spec/models/siebel/activity_spec.rb
 
-RSpec/FilePath:
+Rails/FilePath:
   Enabled: true
 
 Rails/InverseOf:
@@ -874,7 +877,7 @@ RSpec/IdenticalEqualityAssertion: # new in 2.4
   Enabled: true
 RSpec/SubjectDeclaration: # new in 2.5
   Enabled: true
-RSpec/Rails/AvoidSetupHook: # new in 2.4
+RSpecRails/AvoidSetupHook: # new in 2.4
   Enabled: true
 Layout/LineContinuationLeadingSpace: # new in 1.31
   Enabled: true
@@ -989,7 +992,7 @@ RSpec/VerifiedDoubleReference: # new in 2.10.0
   Enabled: true
 FactoryBot/SyntaxMethods: # new in 2.7
   Enabled: true
-RSpec/Rails/HaveHttpStatus: # new in 2.12
+RSpecRails/HaveHttpStatus: # new in 2.12
   Enabled: true
 # Both were moved out from the RSpec namespace
 Capybara/SpecificFinders: # new in 2.13
