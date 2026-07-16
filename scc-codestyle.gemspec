@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors  = ['SCC Team']
   spec.email    = ['scc@suse.com']
 
-  spec.required_ruby_version = '>= 2.5.0'
+  spec.required_ruby_version = '>= 2.7.0'
 
   spec.summary  = 'SCC style guides and shared style configs.'
   spec.homepage = 'https://github.com/SUSE/scc-codestyle'

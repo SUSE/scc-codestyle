@@ -15,8 +15,6 @@ AllCops:
 plugins:
   - rubocop-performance
   - rubocop-rails
-
-require:
   - rubocop-rspec
   - rubocop-rspec_rails
   - rubocop-capybara
@@ -999,6 +997,6 @@ RSpecRails/HaveHttpStatus: # new in 2.12
 # Both were moved out from the RSpec namespace
 Capybara/SpecificFinders: # new in 2.13
   Enabled: true
-Capybara/SpecificMatcher: # new in 2.12
+Capybara/RSpec/SpecificMatcher: # new in 2.12, moved from Capybara/SpecificMatcher
   Enabled: true
 
