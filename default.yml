@@ -12,9 +12,11 @@ AllCops:
     - tmp/**/*
     - lib/locale/*
 
-require:
+plugins:
   - rubocop-performance
   - rubocop-rails
+
+require:
   - rubocop-rspec
   - rubocop-rspec_rails
   - rubocop-capybara
