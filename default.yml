@@ -12,7 +12,7 @@ AllCops:
     - tmp/**/*
     - lib/locale/*
 
-require:
+plugins:
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
@@ -997,6 +997,6 @@ RSpecRails/HaveHttpStatus: # new in 2.12
 # Both were moved out from the RSpec namespace
 Capybara/SpecificFinders: # new in 2.13
   Enabled: true
-Capybara/SpecificMatcher: # new in 2.12
+Capybara/RSpec/SpecificMatcher: # new in 2.12, moved from Capybara/SpecificMatcher
   Enabled: true
 
