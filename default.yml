@@ -14,12 +14,12 @@ AllCops:
 
 plugins:
   - rubocop-rails
-  - rubocop-rspec_rails
   - rubocop-capybara
   - rubocop-factory_bot
   - rubocop-thread_safety
 
 require:
+  - rubocop-rspec_rails
   - rubocop-performance
   - rubocop-rspec
 
